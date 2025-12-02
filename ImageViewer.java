@@ -16,8 +16,8 @@ import java.util.Iterator;
  * 
  * To start the application, create an object of this class.
  * 
- * @author Michael Kölling and David J. Barnes.
- * @version 3.1
+ * @author Jimmy Arias
+ * @version 12-1-25
  */
 public class ImageViewer
 {
@@ -255,7 +255,15 @@ public class ImageViewer
         filterList.add(new GrayScaleFilter("Grayscale"));
         filterList.add(new EdgeFilter("Edge Detection"));
         filterList.add(new FishEyeFilter("Fish Eye"));
-       
+        filterList.add(new RedChannelFilter());
+        filterList.add(new BlueChannelFilter());
+        filterList.add(new GreenChannelFilter());
+        filterList.add(new RedTintFilter());
+        filterList.add(new BlueTintFilter());
+        filterList.add(new GreenTintFilter());
+        filterList.add(new WarholFilter());
+        filterList.add(new FlippedWarholFilter());
+        
         return filterList;
     }
     
